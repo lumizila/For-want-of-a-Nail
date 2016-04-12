@@ -69,100 +69,101 @@
 				<form>
 					<fieldset class="form-group">
 						<label for="formGroupExampleInput">First Name </label>
-						<input type="text" class="form-control"  placeholder="Jeffrey">
+						<textarea id="fname" class="form-control" rows="1"> </textarea>
 					</fieldset>
 					<fieldset class="form-group">
 						<label for="formGroupExampleInput">Last Name </label>
-						<input type="text" class="form-control"  placeholder="Forbes">
+						<textarea id = "lname" class="form-control" rows="1"> </textarea>
 					</fieldset>
 					<fieldset class="form-group">
 						<label for="formGroupExampleInput2">Headline </label>
-						<textarea class="form-control">User's Headline</textarea>
+						<textarea id="headline" class="form-control" rows="1"> </textarea>
 					</fieldset>
 				  
 					<fieldset class="form-group">
-						<label for="formGroupExampleInput2">Message Body </label>
-						<textarea class="form-control"  rows="4">User's Current Bio</textarea>
+						<label for="formGroupExampleInput2">Biography </label>
+						<textarea id="biography" class="form-control" rows="4"></textarea>
 					</fieldset>
 			  
 					<fieldset class="form-group">
 						<label for="formGroupExampleInput2">Specialty </label>
-						<textarea class="form-control">User's Specialty</textarea>
+						<textarea id="specialty" class="form-control" rows="1"></textarea>
 					</fieldset>
 				  
 					<fieldset class="form-group">
 						<label for="formGroupExampleInput2">Favorite NGO's </label>
-						<textarea class="form-control">User's Favorite NGO's comma seperate</textarea>
+						<div id="ngos">
+							<div class="checkbox">
+								<label><input type="checkbox" value="">NGO1</label>
+							</div>
+						</div>
 					</fieldset>
 				  
 				  
 					<div class="form-group">
 						<label for="state" class="col-sm-2 control-label">State</label>
 					
-						<select class="form-control" value"Default" selected = "User's current state" id="state" name="state">
-							<option value="default">User's Default State</option>
-							<option value="AK">Alaska</option>
-							<option value="AL">Alabama</option>
-							<option value="AR">Arkansas</option>
-							<option value="AZ">Arizona</option>
-							<option value="CA">California</option>
-							<option value="CO">Colorado</option>
-							<option value="CT">Connecticut</option>
-							<option value="DC">District of Columbia</option>
-							<option value="DE">Delaware</option>
-							<option value="FL">Florida</option>
-							<option value="GA">Georgia</option>
-							<option value="HI">Hawaii</option>
-							<option value="IA">Iowa</option>
-							<option value="ID">Idaho</option>
-							<option value="IL">Illinois</option>
-							<option value="IN">Indiana</option>
-							<option value="KS">Kansas</option>
-							<option value="KY">Kentucky</option>
-							<option value="LA">Louisiana</option>
-							<option value="MA">Massachusetts</option>
-							<option value="MD">Maryland</option>
-							<option value="ME">Maine</option>
-							<option value="MI">Michigan</option>
-							<option value="MN">Minnesota</option>
-							<option value="MO">Missouri</option>
-							<option value="MS">Mississippi</option>
-							<option value="MT">Montana</option>
-							<option value="NC">North Carolina</option>
-							<option value="ND">North Dakota</option>
-							<option value="NE">Nebraska</option>
-							<option value="NH">New Hampshire</option>
-							<option value="NJ">New Jersey</option>
-							<option value="NM">New Mexico</option>
-							<option value="NV">Nevada</option>
-							<option value="NY">New York</option>
-							<option value="OH">Ohio</option>
-							<option value="OK">Oklahoma</option>
-							<option value="OR">Oregon</option>
-							<option value="PA">Pennsylvania</option>
-							<option value="PR">Puerto Rico</option>
-							<option value="RI">Rhode Island</option>
-							<option value="SC">South Carolina</option>
-							<option value="SD">South Dakota</option>
-							<option value="TN">Tennessee</option>
-							<option value="TX">Texas</option>
-							<option value="UT">Utah</option>
-							<option value="VA">Virginia</option>
-							<option value="VT">Vermont</option>
-							<option value="WA">Washington</option>
-							<option value="WI">Wisconsin</option>
-							<option value="WV">West Virginia</option>
-							<option value="WY">Wyoming</option>
+						<select id="states" class="form-control" value = "Default" selected = "User's current state" name="state">
+							<option class="state" value="default" id="state"></option>
+							<option class="state" value="AK">Alaska</option>
+							<option class="state" value="AL">Alabama</option>
+							<option class="state" value="AR">Arkansas</option>
+							<option class="state" value="AZ">Arizona</option>
+							<option class="state" value="CA">California</option>
+							<option class="state" value="CO">Colorado</option>
+							<option class="state" value="CT">Connecticut</option>
+							<option class="state" value="DC">District of Columbia</option>
+							<option class="state" value="DE">Delaware</option>
+							<option class="state" value="FL">Florida</option>
+							<option class="state" value="GA">Georgia</option>
+							<option class="state" value="HI">Hawaii</option>
+							<option class="state" value="IA">Iowa</option>
+							<option class="state" value="ID">Idaho</option>
+							<option class="state" value="IL">Illinois</option>
+							<option class="state" value="IN">Indiana</option>
+							<option class="state" value="KS">Kansas</option>
+							<option class="state" value="KY">Kentucky</option>
+							<option class="state" value="LA">Louisiana</option>
+							<option class="state" value="MA">Massachusetts</option>
+							<option class="state" value="MD">Maryland</option>
+							<option class="state" value="ME">Maine</option>
+							<option class="state" value="MI">Michigan</option>
+							<option class="state" value="MN">Minnesota</option>
+							<option class="state" value="MO">Missouri</option>
+							<option class="state" value="MS">Mississippi</option>
+							<option class="state" value="MT">Montana</option>
+							<option class="state" value="NC">North Carolina</option>
+							<option class="state" value="ND">North Dakota</option>
+							<option class="state" value="NE">Nebraska</option>
+							<option class="state" value="NH">New Hampshire</option>
+							<option class="state" value="NJ">New Jersey</option>
+							<option class="state" value="NM">New Mexico</option>
+							<option class="state" value="NV">Nevada</option>
+							<option class="state" value="NY">New York</option>
+							<option class="state" value="OH">Ohio</option>
+							<option class="state" value="OK">Oklahoma</option>
+							<option class="state" value="OR">Oregon</option>
+							<option class="state" value="PA">Pennsylvania</option>
+							<option class="state" value="PR">Puerto Rico</option>
+							<option class="state" value="RI">Rhode Island</option>
+							<option class="state" value="SC">South Carolina</option>
+							<option class="state" value="SD">South Dakota</option>
+							<option class="state" value="TN">Tennessee</option>
+							<option class="state" value="TX">Texas</option>
+							<option class="state" value="UT">Utah</option>
+							<option class="state" value="VA">Virginia</option>
+							<option class="state" value="VT">Vermont</option>
+							<option class="state" value="WA">Washington</option>
+							<option class="state" value="WI">Wisconsin</option>
+							<option class="state" value="WV">West Virginia</option>
+							<option class="state" value="WY">Wyoming</option>
 						</select>
 					</div>
 				</form>
 			</div>
 		</div>
-		<img src="img/profile_pic.png" alt="Current profile picture" "height" = 80 "width" = 80/>
-      
+		<img id = "picture" src="img/profile_pic.png" alt="Current profile picture" "height" = 80 "width" = 80/>
 		<button class="btn btn-default">Upload</button>
- 
-      
 		<br> <br> <br>
       
 		<button class="btn btn-default btn-lg btn-block">Submit</button>

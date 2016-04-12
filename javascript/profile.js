@@ -1,9 +1,8 @@
-var url_base = "http://www.inf.ufpr.br/lmwc14/UNC/";//UNDEFINED
+var url_base = //UNDEFINED
 
 $(document).ready(function(){ 
-	alert("started");
-	var $userid = "0";
-	getData($userid); //pass user as parameter
+	//alert("started");
+	//var $userid = "0";
 	//Things that will end up loading new pages:
 	
 	//if log out is clicked
@@ -71,8 +70,8 @@ $(document).ready(function(){
 		getBadge($userid);
 	});
 	
-	$userid = getUser(); //returns the id of the user 				
-	
+	$userid = getUser(); //returns the id of the user 		
+	getData($userid); //pass user as parameter	
 	getBio($userid);
 
 });

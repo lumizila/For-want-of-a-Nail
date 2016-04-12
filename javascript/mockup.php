@@ -5,12 +5,11 @@
 					{"firstName":"Anna", "lastName":"Smith"},
 					{"firstName":"Peter", "lastName":"Jones"}],
 					 "badges":["earthquake badge bronze.png", "fire badge bronze.png"],
-					 "username":"Shit Junior",
-					 "headline":"fml I didnt want to be doing this",
+					 "username":"JohnJunior",
+					 "headline":"Hey! I didnt want to be doing this",
 					 "picture":"https://s-media-cache-ak0.pinimg.com/236x/84/6b/b0/846bb019b7ceb8b143d79016b638d320.jpg",
 					 "location":"Very far away",
 					 "totalpoints":"50"}
-			
 			return $data;
 	}
  /*List of prefered NGO’s of the player “ngos”
