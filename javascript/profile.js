@@ -14,7 +14,9 @@ $(document).ready(function(){
 		//load landing page
 		window.location.href = "landpage.html";
 	});
-	
+	$('#profile').click(function(){
+		window.location.href = "profile.html";
+	});
 	//if dashboard is clicked
 	$('#dashboard').click(function() {
 		window.location.href = "dashboard.html";
