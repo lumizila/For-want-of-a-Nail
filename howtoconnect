@@ -1,0 +1,3 @@
+How to ssh into the amazon server:
+
+ssh ubuntu@fwoan.disasterstrikes.me -i forwantofanail.pem

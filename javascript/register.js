@@ -1,6 +1,7 @@
 var url_base = //UNDEFINED
 
 $(document).ready(function(){
+	alert("javascript working");
 	var mapProp = {
 		center:new google.maps.LatLng(35.54339, -79.02591),
 		zoom:6,
@@ -24,6 +25,12 @@ $(document).ready(function(){
 			return;
 		}
 		
+		/*var today = new Date();
+		var dd = today.getDate();
+		var mm = today.getMonth()+1; //January is 0!
+		var yyyy = today.getFullYear();
+		today = mm+'/'+dd+'/'+yyyy;
+		$date = today;*/
 		sendData(); //send data to the database
 					      
 	});
@@ -33,25 +40,20 @@ function sendData(){
 	$.ajax(url_base + "/login.php", // MATTEW: you can change here to call the php code you prefer
 					{type: "POST",
 						  dataType: "json",
-						  data: {"newnickname": $newusername, "newpassword" : $newpassword, "newfname" : $newfname, "newlname" : $newlname, "newemail" : $newemail,},
-						 success: function(todo_json, status, jqXHR) { 
-						  	alert(jqXHR.responseText); 	
-						  	//load main page of the game for THE NEW user, activate cookies
-
-						  }, 
-						  error: function(jqXHR, status, error) {
-						  	alert(jqXHR.responseText);
-					      }
+						  data: {"newnickname": $newusername, "newpassword" : $newpassword, "newfname" : $newfname, "newlname" : $newlname, "newemail" : $newemail, "location" : $location},
+						  success: successFn,
+						  error: failFn  
 					}
-			);
-			
+			);	
 }
 
-//function successFn(result){
+function successFn(result){
+	window.location.href = urlbase+"/dashboard.html";
 	//load main page of the game for THE NEW user, activate cookies
-//}
+}
 
-//function failFn(xhr, status, strErr){
+function failFn(xhr, status, strErr){
+	alert("There was an error on the server, please try again");
 	//treat error
-//}
+}
 

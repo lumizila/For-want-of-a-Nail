@@ -1,185 +1,259 @@
+<!--- THIS FILE CONTAINS THE JAVASCRIPT IDS I NEED--->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <title>Profile View</title>
-</head>
-
-<body>
-<div class="page-container">
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container target">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span>
- <span class="icon-bar"></span>
-
-                    <span
-                    class="icon-bar"></span> <span class="icon-bar"></span>
-
-                </button> <a class="navbar-brand" href="#">For the Want of A Nail</a>
-
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#" class="">Dashboard</a>
-                    </li>
-                    <li><a href="#" class="">Profile</a>
-                    </li>
-                    <li><a href="#" class="">Settings</a>
-                    </li>
-                    <li><a href="#" class="">Help</a>
-                    </li>
-                </ul>
-
-          
-                <form class="navbar-form navbar-right">
-                    <input type="text" class="form-control" placeholder="Search Users...">
-                </form>
-
-            </div>
-        </div>
-    </nav>
-
-
-
-    <div class="container" style = "margin-top : 50px;">
-        <div class="row row-offcanvas row-offcanvas-left">
-            <!-- sidebar -->
-            <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
-              
-             <img src="img/profile_pic.jpg" alt = "Profile Pic" height="200" width = "150">
-              
-              <h1> Jforbes94</h1>
-             
-              <h4> Location <img src="img/flag_usa.png" alt = "Profile Pic" height="20" width = "20"></h4>
-              
-              <h4>Level: 5</h4>
-              <h4>Total Score: 12000</h4>
-              <h4>Speciality: </h4>
-              
-              
-              
-              
-              
-                
-                
-            </div>
-            <!-- main area -->
-            <div class="col-xs-12 col-sm-9">
-            <nav>
-  <ul class="pagination pagination-lg">
-    <li>
-      <a href="#" aria-label="Previous">
-        <span aria-hidden="true">&laquo;</span>
-      </a>
-    </li>
-    <li><a href="#">Biography</a></li>
-    <li class= "active"><a href="#">Timeline</a></li>
-    <li><a href="#">Badges</a></li>
-    <li><a href="#">Statistics</a></li>
-    
-    <li>
-      <a href="#" aria-label="Next">
-        <span aria-hidden="true">&raquo;</span>
-      </a>
-    </li>
-  </ul>
-</nav>
-    
-    <div id ="biodiv">
-                   
-            <h1> Biography</h1>
-
-            <h4>Fullname: Jeffrey Forbes </h4>
-
-            <h4>Headline: </h4>
-
-            <h4> Relief Supporter Since:  Febuary 14th, 2016 </h4> 
-
-                
-  
-            <h4> About: </h4>
-            <p>  Vestibulum porttitor massa eget pellentesque eleifend. Suspendisse tempor,
-                    nisi eu placerat auctor, est erat tempus neque, pellentesque venenatis
-                    eros lorem vel quam.  </p>   
-  
-            
-  
-  
-  
-             
-            <h4>Favorite Organizations:</h4>
-             <ul>
-            <li>NGO Name</li>
-            <li>American Red Cross </li>
-            <li>Habitat For Humanity</li>
-            </ul>
- 
-           
-      </div>
-
-    <div>
-    <div class="panel panel-default">
-      <div class="panel-heading">
-                    <h3 class="panel-title">Offer History</h3>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         
-        <hr>
-                    
-     <table class="table table-bordered table-hover specialCollapse">
-      <thead>
-        <tr>
-          <th class="col-md-2"><small>Disaster Name</small></th>
-          <th class="col-md-1"><small>Item Title</small></th>
-          <th class="col-md-2"><small>NGO</small></th>
-          <th class="col-md-1"><small>Item Link</small></th>
-          <th class="col-md-1"><small>Description</small></th>
-          <th class="col-md-1"><small>Price</small></th>
-          <th class="col-md-1"><small>Time to Deliver</small></th>
-          <th class="col-md-1"><small>Votes</small></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><small>Disaster XYZ</small></td>
-          <td><small>Ladder</small></td>
-          <td><small>NGO ABC</small></td>
-          <td><small>Hyperlink</small></td>
-          <td><small>Description</small></td>
-          <td><small>X $</small></td>
-          <td><small>Y Dayz</small></td>
-          <td><small>Z Points</small></td>
-        </tr>
-      
-      </tbody>
-    </table>
-   </div> 
-</div>  
-</div>
+        <script src="jquery-1.11.3.js"></script> 
+		<script src="javascript/profile.js" type="text/javascript"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script	src="http://maps.googleapis.com/maps/api/js"> </script>	
+        <title>Profile View</title>
 
 
+    </head>
+    <body>
+        <div class="page-container">
+            <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+                <div class="container target">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span
+                            class="icon-bar"></span> <span class="icon-bar"></span>
+                        </button> <a class="navbar-brand" id= "help" href="#">For the Want of A Nail</a>
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li id = "dashboard" ><a  href="#">Dashboard</a>
+                            </li>
+                            <li id = "profile"><a  href="#">Profile</a>
+                            </li>
+                            <li id = "mailbox" ><a href="#">Inbox</a>
+                            </li>
+                            <li id = "edit"><a href="#">Edit Profile</a>
+                            </li>
+                            <li id = "logout"><a  href="#">Logout</a>
+                            </li>
+                        </ul>
+                        <form class="navbar-form navbar-right">
+                            <input type="text" class="form-control" placeholder="Search Users...">
+                        </form>
+                    </div>
+                </div>
+            </nav>
+            <div class="container" style = "margin-top : 100px;">
+                <div class="row row-offcanvas row-offcanvas-left">
+                    <!-- sidebar -->
+                    <div class="col-xs-6 col-sm-3 sidebar-offcanvas" >
+                        <img id ="picture" src="img/profile_pic.jpg" alt = "Profile Pic" height="200" width = "150">
+                        <h1 id = "username"> Jforbes94</h1>
+						<h4 id = "headline"> Headline: </h4>
 
+                        <button type="button" class="btn btn-primary-outline btn-sm btn-block">Send Message</button>
+                        
+                        <h4 id="location"> Location <img src="img/flag_usa.png" alt = "Profile Pic" height="20" width = "20"></h4>
+                        <h4 id="level">Level: 5</h4>
+                        <h4 id="totalpoints">Total Score: 12000</h4>
+                        <h4>Trophy Case <br></h4>
+						<div id = "sidebadges">
+							<img src="img/flag_usa.png" alt="USA Flag" width="75" height="75">
+							<img src="img/flag_usa.png" alt="USA Flag" width="75" height="75">
+							<img src="img/flag_usa.png" alt="USA Flag" width="75" height="75">
+						</div>
 
+                    </div>
+                    <div class="col-xs-12 col-sm-9">
+                        <nav>
+                            <ul class="pagination pagination-lg">
+                                <li>
+                                    <a href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+                                <li  id = "biography" class= "active"><a href="#">Biography</a></li>
+                                <li  id = "timeline" ><a href="#">Timeline</a></li>
+                                <li  id = "badges"><a href="#">Badges</a></li>
+                                <li id = "statistics"><a  href="#">Statistics</a></li>
+                                <li>
+                                    <a href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div id ="biographydiv">
+                            <h1> Biography</h1>
+                            <hr>
+                            <h4 id ="fullname">Fullname: Jeffrey Forbes </h4>
+                            <h4 id ="signupdate"> Relief Supporter Since:  Febuary 14th, 2016 </h4>
 
-            
+                            <h4> About: </h4>
+                            <p id ="bio">  Vestibulum porttitor massa eget pellentesque eleifend. Suspendisse tempor,
+                                nisi eu placerat auctor, est erat tempus neque, pellentesque venenatis
+                                eros lorem vel quam.  
+                            </p>
+                            <h4>Favorite Organizations:</h4>
+                            <ul id="ngos">
+                                <li>NGO Name</li>
+                                <li>American Red Cross </li>
+                                <li>Habitat For Humanity</li>
+                            </ul>
+                        </div>   
+                        <div id="timelinediv">
+                            <h1> Timeline </h1>
+                            <hr>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Offer History</h3>
+                                    <hr>
+                                    <table class="table table-bordered table-hover specialCollapse">
+                                        <thead>
+                                            <tr>
+                                                <th class="col-md-2"><small>Disaster Name</small></th>
+                                                <th class="col-md-1"><small>Item Title</small></th>
+                                                <th class="col-md-2"><small>NGO</small></th>
+                                                <th class="col-md-1"><small>Item Link</small></th>
+                                                <th class="col-md-1"><small>Description</small></th>
+                                                <th class="col-md-1"><small>Price</small></th>
+                                                <th class="col-md-1"><small>Time to Deliver</small></th>
+                                                <th class="col-md-1"><small>Votes</small></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="tablebody">
+                                            <tr>
+                                                <td><small>Disaster XYZ <img src="img/flag_usa.png" alt="USA Flag" width="75" height="75"> </small></td>
+                                                <td><small>Ladder</small></td>
+                                                <td><small>NGO ABC</small></td>
+                                                <td><small>Hyperlink</small></td>
+                                                <td><small>Description</small></td>
+                                                <td><small>X $</small></td>
+                                                <td><small>Y Dayz</small></td>
+                                                <td><small>Z Points</small></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div id="badgesdiv">
+                            <h1> Badges </h1>
+                            <hr>
+                            <table id="badgesbody" class="table-bordered">
+                                    <tr>
+                                    <td>
+                                        <img src="img/flag_usa.png" alt = "Flag" Height = "100" width "100">
+                                    </td>
+                                    <td>Offers 10/10</td>
+                                    <td>This badge can be won by dljldksjaldjask. and dshajdasjk.</td>
+										<td>
+										<form action="demo_form.asp">
+										  <input type="checkbox" name="vehicle" value="Bike"> I have a bike<br>
+										  <input type="checkbox" name="vehicle" value="Car" checked> I have a car<br>
+										  <input type="submit" value="Submit">
+										</form>
+										</td>
+                                    <tr>
+                                    <td>
+                                        <img src="img/flag_usa.png" alt = "Flag" Height = "100" width "100">
+                                    </td>
+                                    <td>
+                                        <img src="img/flag_usa.png" alt = "Flag" Height = "100" width "100">
+                                    </td>
+                                    <td>
+                                        <img src="img/flag_usa.png" alt = "Flag" Height = "100" width "100">
+                                    </td>
+                                    <td>
+                                        <img src="img/flag_usa.png" alt = "Flag" Height = "100" width "100">
+                                    </td>
+                                    <td>
+                                        <img src="img/flag_usa.png" alt = "Flag" Height = "100" width "100">
+                                    </td>
+                                    <td>
+                                        <img src="img/flag_usa.png" alt = "Flag" Height = "100" width "100">
+                                    </td>
+                                    <td>
+                                        <img src="img/flag_usa.png" alt = "Flag" Height = "100" width "100">
+                                    </td>
+                                
+                            </table>
+                        </div>
+                        
+
+                        <div id="statisticsdiv">
+                            <h1>
+                                Statistics 
+                            </h1>
+                            <hr>
+
+                            <h3>Offers Made</h3>
+
+                            <hr>
+				
+                            <div class="panel panel-default">
+                                <div class="panel-heading">By Disaster Type</div>
+                                <div id="disasterstype" class="panel-body">
+                                    <h5>Disaster Type A (N>0): N</h5>
+                                    <h5>Fire: 10</h5>
+                                    <h5>Tornado: 0</h5>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">By State</div>
+                                <div id="states" class="panel-body">
+                                    <h5>State A (N> 0): N</h5>
+                                    <h5>North Carolina: 5</h5>
+                                    <h5>Michigan: 3</h5>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">By Organization Type</div>
+                                <div id="ngosstatistics" class="panel-body">
+                                    <h5>Ngo Name A with N> 0: N</h5>
+                                    <h5>Habitat for Humanity: 5</h5>
+                                    <h5>American Cancer Society: 3</h5>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">By Item Category</div>
+                                <div id="broadtags" class="panel-body">
+                                    <h5>Item Broad tag Name A with N> 0: N</h5>
+                                    <h5>Technology: 5</h5>
+                                    <h5>Medical: 3</h5>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">By NGO Category</div>
+                                <div id="ngostypes" class="panel-body">
+                                    <h5>NGO Broad tag Name A with N> 0: N</h5>
+                                    <h5>Secular: 5</h5>
+                                    <h5>Conservation: 3</h5>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">Disasters involved in:</div>
+                                <div id="disastersnames" class="panel-body">
+                                    <h5>Hurricane Floyd</h5>
+                                    <h5>Krusty Krab Anchovie Destruction</h5>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!-- /.col-xs-12 main -->
+                </div>
+                <!--/.row-->
             </div>
-            <!-- /.col-xs-12 main -->
+            <!--/.container-->
         </div>
-        <!--/.row-->
-    </div>
-    <!--/.container-->
-</div>
-<!--/.page-container-->
-</body>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script src="js/script.js"></script>
+        <!--/.page-container-->
+    </body>
 </html>
-

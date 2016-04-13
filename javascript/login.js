@@ -17,7 +17,7 @@ $(document).ready(function(){
 			return;
 		}
 		
-		//send username to database to retrieve real password
+		//send username and password to database to autenticate
 		getJSONdata();
 		
 	});
@@ -25,10 +25,11 @@ $(document).ready(function(){
 
 function getJSONdata() { //should return to me the correct password
 	$.getJSON( url_base+"login.php", {
-			username: $username }, //arguments list
+			username: $username, $password }, //arguments list
 	successFn); //if success will call this function
 	
 	.fail(function() {
+		alert("There was an error on the server, please try again");
 		console.log( "error" );
 	})
 	.always(function() {
@@ -38,9 +39,8 @@ function getJSONdata() { //should return to me the correct password
 
 function successFn(result){
 		//receive answer from database
-		
-		//test if answer agrees with given data, if yes then go to main game page, BY COOKIES 
-			//if not correct, message "password incorrect"
+		//if success, go to the next page, the dashboard.
+		window.location.href = urlbase+"/dashboard.html"
 }
 
 
