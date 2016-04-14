@@ -3,7 +3,7 @@ var url_base = //UNDEFINED
 $(document).ready(function(){
 	alert("started");
 	$("#newmessage").hide();
-	/*getEmails();
+	getEmails();
 
 	$('#NewMesButton').click(function(){
 		openNewMes();
@@ -41,7 +41,6 @@ $(document).ready(function(){
 		alert("clicked");
 		window.location.href = "mailbox.html";
 	});
-	*/
 }
 
 function getEmails(){
