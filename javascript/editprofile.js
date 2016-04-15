@@ -3,6 +3,38 @@ var url_base = //UNDEFINED
 $(document).ready(function(){
 	alert("started");
 	getEditData();
+	$('#profile').click(function(){
+		window.location.href = "profile.html";
+	});
+	
+	$('#logout').click(function() {
+		//disactivate cookies
+															//disactivateCookies(); 
+															//TODO: add this function to our document
+		//load landing page
+		window.location.href = "landpage.html";
+	});
+	
+	//if dashboard is clicked
+	$('#dashboard').click(function() {
+		window.location.href = "dashboard.html";
+	});
+	
+	//if edit profile is clicked
+	$('#edit').click(function() {
+		window.location.href = "editprofile.html";
+	});
+	
+	//if help is clicked
+	$('#help').click(function() {
+		window.location.href = "help.html";
+	});
+	
+	//if mailbox is clicked
+	$("#mailbox a").click(function() {
+		alert("clicked");
+		window.location.href = "mailbox.html";
+	});
 	
 	if($("#submit".click(function(){
 		successEditData();
